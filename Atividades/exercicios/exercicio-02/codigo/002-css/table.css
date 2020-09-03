@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+}
+table{
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+table, th, td {
+    border-radius: 20px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    font-size: 14pt;
+    font-family:'Franklin Gothic Medium';
+    font-style: bold;
+}
+td {
+    background-color: rgb(244,164,96);
+}
+caption {
+    font-size: 20pt;
+    font-family: 'Franklin Gothic Medium';
+    font-style: italic;
+
+}
+
+tr {
+    background-color: rgb(210,105,30);
+}
+
+thead tr:hover{
+    background-color: rgb(139,69,19);
+
+}
+
+tbody td:hover{
+    background-color: rgb(255,222,173);
+}

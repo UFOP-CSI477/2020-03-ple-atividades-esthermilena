@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JavaScript</title>
+
+    <script>
+    
+        function Pessoa(nome, sobrenome, endereço) {
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+            this.endereço = endereço;
+        }
+
+        function carregarDados(){
+
+            let nome =  window.prompt('Insira seu nome:' );
+            let sobrenome = window.prompt('Insira seu sobrenome:');
+            let endereço = window.prompt('Insira seu endereço:');
+            
+            let pessoa = new Pessoa(nome, sobrenome, endereço);
+            document.getElementById("nome").innerHTML = pessoa.nome;
+            document.getElementById("sobrenome").innerHTML = pessoa.sobrenome;
+            document.getElementById("endereço").innerHTML = pessoa.endereço;
+        }
+    </script>
+</head>
+<body>
+    
+    <script>
+        document.write('Insira seus dados');
+    </script>
+
+    
+        <div id="nome">Nome:</div>
+        <div id="sobrenome">Sobrenome:</div>
+        <div id="endereço">Endereço:</div>
+   
+
+    <input type="button" value="Inserir" onclick="carregarDados()">
+</body>
+</html>
